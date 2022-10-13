@@ -28,15 +28,15 @@
   	el.style.left = "0";
   	el.style.width = "100%";
   	el.style.zIndex = "9999";
-  	el.style.borderTop = "2px solid black";
-  	el.style.borderBottom = "2px solid black";
+  	el.style.borderTop = "hidden";
+  	el.style.borderBottom = "hidden";
 
   	const p = document.createElement("p");
   	p.style.position = "absolute";
   	p.style.left = "0";
   	p.style.height = "1px";
   	p.style.width = "100%";
-  	p.style.borderTop = "1px dashed black";
+  	p.style.borderTop = "hidden";
 
   	el.appendChild(p);
   	document.body.appendChild(el);
