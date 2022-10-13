@@ -19,6 +19,25 @@
     }
     return [];
   }
+// SETUP
+  function create(className) {
+  	const el = document.createElement("div");
+  	el.className = `scrollama__debug-step ${className}`;
+  	el.style.position = "fixed";
+  	el.style.left = "0";
+  	el.style.width = "100%";
+  	el.style.zIndex = "9999";
+
+  	const p = document.createElement("p");
+  	p.style.position = "absolute";
+  	p.style.left = "0";
+  	p.style.height = "1px";
+  	p.style.width = "100%";
+
+  	el.appendChild(p);
+  	document.body.appendChild(el);
+  	return el;
+  }
 
 
   // UPDATE
